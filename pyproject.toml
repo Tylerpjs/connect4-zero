@@ -1,1 +1,26 @@
+[build-system]
+requires = ["setuptools>=68]
 
+[project]
+name = "connect4zero"
+version = "0.1.0"
+description = "AlphaZero-style Connect Four agent trained from self-play"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Ty Johnson" }]
+
+
+dependencies = [
+    "numpy>=1.26",
+    "torch>=2.2",]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",]
+
+[tool.setuptools.packages.find]
+include = ["connect4zero*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
