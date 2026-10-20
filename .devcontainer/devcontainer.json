@@ -1,0 +1,5 @@
+{
+  "name": "connect4-zero",
+  "image": "mcr.microsoft.com/devcontainers/python:3.14",
+  "postCreateCommand": "pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -e '.[dev]'"
+}
